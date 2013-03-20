@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 interface EventManagerInterface
 {

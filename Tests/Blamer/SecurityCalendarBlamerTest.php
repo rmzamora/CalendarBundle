@@ -1,8 +1,8 @@
 <?php
-namespace Rizza\CalendarBundle\Tests\Blamer;
+namespace Rmzamora\CalendarBundle\Tests\Blamer;
 
-use Rizza\CalendarBundle\Blamer\SecurityCalendarBlamer;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Blamer\SecurityCalendarBlamer;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 use Symfony\Component\Security\Core\SecurityContextInterface;
 
 /**
@@ -48,7 +48,7 @@ class SecurityCalendarBlamerTest extends CalendarTestCase
      *
      * @param SecurityContextInterface $securityContext The security context
      *
-     * @return \Rizza\CalendarBundle\Blamer\SecurityCalendarBlamer
+     * @return \Rmzamora\CalendarBundle\Blamer\SecurityCalendarBlamer
      */
     protected function getBlamer(SecurityContextInterface $securityContext)
     {

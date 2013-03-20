@@ -1,9 +1,9 @@
 <?php
 
-namespace Rizza\CalendarBundle\Form\DataTransformer;
+namespace Rmzamora\CalendarBundle\Form\DataTransformer;
 
 use Symfony\Component\Form\DataTransformerInterface;
-use Rizza\CalendarBundle\Model\UserManagerInterface;
+use Rmzamora\CalendarBundle\Model\UserManagerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Form\Exception\UnexpectedTypeException;
 

@@ -1,0 +1,30 @@
+{
+    "name": "rmzamora/calendar-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony RmzamoraCalendarBundle",
+    "keywords": ["symfony2", "form", "calendar"],
+    "homepage": "https://github.com/rmzamora/CalendarBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mell zamora",
+            "email": "me@rmzamora.com",
+            "homepage": "http://rmzamora.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.1.*,<2.3-dev"
+    },
+    "autoload": {
+        "psr-0": { "Rmzamora\\CalendarBundle": "" }
+    },
+    "target-dir": "Rmzamora/CalendarBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-2.1": "2.1.x-dev",
+            "dev-master": "2.2.x-dev"
+        }
+    }
+}

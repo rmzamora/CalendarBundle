@@ -1,12 +1,12 @@
 <?php
 
-namespace Rizza\CalendarBundle\Security\Authorization\Voter;
+namespace Rmzamora\CalendarBundle\Security\Authorization\Voter;
 
 use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
-use Rizza\CalendarBundle\Model\AttendeeInterface;
-use Rizza\CalendarBundle\Model\AttendeeManagerInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeManagerInterface;
 
 class AttendeeVoter implements VoterInterface
 {

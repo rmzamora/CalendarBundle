@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Creator;
+namespace Rmzamora\CalendarBundle\Creator;
 
-use Rizza\CalendarBundle\Model\EventInterface;
+use Rmzamora\CalendarBundle\Model\EventInterface;
 
 interface EventCreatorInterface
 {

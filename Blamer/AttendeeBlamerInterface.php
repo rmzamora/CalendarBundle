@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Blamer;
+namespace Rmzamora\CalendarBundle\Blamer;
 
-use Rizza\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
 
 interface AttendeeBlamerInterface
 {

@@ -5,19 +5,19 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="rizza_calendar.blamer.calendar.security" class="Rizza\CalendarBundle\Blamer\SecurityCalendarBlamer">
+        <service id="rmzamora_calendar.blamer.calendar.security" class="Rmzamora\CalendarBundle\Blamer\SecurityCalendarBlamer">
             <argument type="service" id="security.context" />
         </service>
-        <service id="rizza_calendar.blamer.event.security" class="Rizza\CalendarBundle\Blamer\SecurityEventBlamer">
+        <service id="rmzamora_calendar.blamer.event.security" class="Rmzamora\CalendarBundle\Blamer\SecurityEventBlamer">
             <argument type="service" id="security.context" />
         </service>
-        <service id="rizza_calendar.blamer.attendee.security" class="Rizza\CalendarBundle\Blamer\SecurityAttendeeBlamer">
+        <service id="rmzamora_calendar.blamer.attendee.security" class="Rmzamora\CalendarBundle\Blamer\SecurityAttendeeBlamer">
             <argument type="service" id="security.context" />
         </service>
 
-        <service id="rizza_calendar.blamer.calendar.noop" class="Rizza\CalendarBundle\Blamer\NoopCalendarBlamer" />
-        <service id="rizza_calendar.blamer.event.noop" class="Rizza\CalendarBundle\Blamer\NoopEventBlamer" />
-        <service id="rizza_calendar.blamer.attendee.noop" class="Rizza\CalendarBundle\Blamer\NoopAttendeeBlamer" />
+        <service id="rmzamora_calendar.blamer.calendar.noop" class="Rmzamora\CalendarBundle\Blamer\NoopCalendarBlamer" />
+        <service id="rmzamora_calendar.blamer.event.noop" class="Rmzamora\CalendarBundle\Blamer\NoopEventBlamer" />
+        <service id="rmzamora_calendar.blamer.attendee.noop" class="Rmzamora\CalendarBundle\Blamer\NoopAttendeeBlamer" />
     </services>
 
 </container>

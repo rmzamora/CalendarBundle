@@ -1,10 +1,10 @@
 <?php
-namespace Rizza\CalendarBundle\Tests\Creator;
+namespace Rmzamora\CalendarBundle\Tests\Creator;
 
-use Rizza\CalendarBundle\Blamer\AttendeeBlamerInterface;
-use Rizza\CalendarBundle\Creator\AttendeeCreator;
-use Rizza\CalendarBundle\Model\AttendeeManagerInterface;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Blamer\AttendeeBlamerInterface;
+use Rmzamora\CalendarBundle\Creator\AttendeeCreator;
+use Rmzamora\CalendarBundle\Model\AttendeeManagerInterface;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 
 /**
  * @author  Yannick Voyer <yan.voyer@gmail.com>
@@ -28,7 +28,7 @@ class AttendeeCreatorTest extends CalendarTestCase
      * @param AttendeeManagerInterface $attendeeManager The attendee manager
      * @param AttendeeBlamerInterface  $attendeeBlamer  The attendee blamer
      *
-     * @return \Rizza\CalendarBundle\Creator\AttendeeCreator
+     * @return \Rmzamora\CalendarBundle\Creator\AttendeeCreator
      */
     protected function getCreator(AttendeeManagerInterface $attendeeManager, AttendeeBlamerInterface  $attendeeBlamer)
     {

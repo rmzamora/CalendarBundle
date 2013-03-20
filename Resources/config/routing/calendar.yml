@@ -1,23 +1,23 @@
-rizza_calendar_list:
+rmzamora_calendar_list:
   pattern:  /
-  defaults: { _controller: RizzaCalendarBundle:Calendar:list }
+  defaults: { _controller: RmzamoraCalendarBundle:Calendar:list }
 
-rizza_calendar_listEvents:
+rmzamora_calendar_listEvents:
   pattern:  /{id}/events
-  defaults: { _controller: RizzaCalendarBundle:Calendar:listEvents }
+  defaults: { _controller: RmzamoraCalendarBundle:Calendar:listEvents }
 
-rizza_calendar_show:
+rmzamora_calendar_show:
   pattern:  /show/{id}
-  defaults: { _controller: RizzaCalendarBundle:Calendar:show }
+  defaults: { _controller: RmzamoraCalendarBundle:Calendar:show }
 
-rizza_calendar_add:
+rmzamora_calendar_add:
   pattern:  /add
-  defaults: { _controller: RizzaCalendarBundle:Calendar:add }
+  defaults: { _controller: RmzamoraCalendarBundle:Calendar:add }
 
-rizza_calendar_edit:
+rmzamora_calendar_edit:
   pattern:  /edit/{id}
-  defaults: { _controller: RizzaCalendarBundle:Calendar:edit }
+  defaults: { _controller: RmzamoraCalendarBundle:Calendar:edit }
 
-rizza_calendar_delete:
+rmzamora_calendar_delete:
   pattern:  /delete/{id}
-  defaults: { _controller: RizzaCalendarBundle:Calendar:delete }
+  defaults: { _controller: RmzamoraCalendarBundle:Calendar:delete }

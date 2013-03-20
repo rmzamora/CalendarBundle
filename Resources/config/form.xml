@@ -5,38 +5,38 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="rizza_calendar.form_type.calendar.default" class="Rizza\CalendarBundle\Form\Type\CalendarType">
-            <tag name="form.type" alias="rizza_calendar.calendar" />
+        <service id="rmzamora_calendar.form_type.calendar.default" class="Rmzamora\CalendarBundle\Form\Type\CalendarType">
+            <tag name="form.type" alias="rmzamora_calendar.calendar" />
         </service>
-        <service id="rizza_calendar.form_type.event.default" class="Rizza\CalendarBundle\Form\Type\EventType">
-            <tag name="form.type" alias="rizza_calendar.event" />
+        <service id="rmzamora_calendar.form_type.event.default" class="Rmzamora\CalendarBundle\Form\Type\EventType">
+            <tag name="form.type" alias="rmzamora_calendar.event" />
         </service>
-        <service id="rizza_calendar.form_type.username.default" class="Rizza\CalendarBundle\Form\Type\UsernameType">
-            <argument type="service" id="rizza_calendar.form.username_transformer" />
-            <tag name="form.type" alias="rizza_calendar.username" />
+        <service id="rmzamora_calendar.form_type.username.default" class="Rmzamora\CalendarBundle\Form\Type\UsernameType">
+            <argument type="service" id="rmzamora_calendar.form.username_transformer" />
+            <tag name="form.type" alias="rmzamora_calendar.username" />
         </service>
-        <service id="rizza_calendar.form_type.attendee.default" class="Rizza\CalendarBundle\Form\Type\AttendeeType">
-            <tag name="form.type" alias="rizza_calendar.attendee" />
+        <service id="rmzamora_calendar.form_type.attendee.default" class="Rmzamora\CalendarBundle\Form\Type\AttendeeType">
+            <tag name="form.type" alias="rmzamora_calendar.attendee" />
         </service>
 
-        <service id="rizza_calendar.form_factory.calendar.default" class="Rizza\CalendarBundle\Form\Factory\CalendarFormFactory" public="false">
+        <service id="rmzamora_calendar.form_factory.calendar.default" class="Rmzamora\CalendarBundle\Form\Factory\CalendarFormFactory" public="false">
             <argument type="service" id="form.factory" />
-            <argument>%rizza_calendar.form.calendar.type%</argument>
-            <argument>%rizza_calendar.form.calendar.name%</argument>
+            <argument>%rmzamora_calendar.form.calendar.type%</argument>
+            <argument>%rmzamora_calendar.form.calendar.name%</argument>
         </service>
-        <service id="rizza_calendar.form_factory.event.default" class="Rizza\CalendarBundle\Form\Factory\EventFormFactory" public="false">
+        <service id="rmzamora_calendar.form_factory.event.default" class="Rmzamora\CalendarBundle\Form\Factory\EventFormFactory" public="false">
             <argument type="service" id="form.factory" />
-            <argument>%rizza_calendar.form.event.type%</argument>
-            <argument>%rizza_calendar.form.event.name%</argument>
+            <argument>%rmzamora_calendar.form.event.type%</argument>
+            <argument>%rmzamora_calendar.form.event.name%</argument>
         </service>
-        <service id="rizza_calendar.form.username_transformer" class="Rizza\CalendarBundle\Form\DataTransformer\UsernameToUserTransformer">
-            <argument type="service" id="rizza_calendar.manager.user" />
-            <argument>%rizza_calendar.model.user.class%</argument>
+        <service id="rmzamora_calendar.form.username_transformer" class="Rmzamora\CalendarBundle\Form\DataTransformer\UsernameToUserTransformer">
+            <argument type="service" id="rmzamora_calendar.manager.user" />
+            <argument>%rmzamora_calendar.model.user.class%</argument>
         </service>
-        <service id="rizza_calendar.form_factory.attendee.default" class="Rizza\CalendarBundle\Form\Factory\AttendeeFormFactory" public="false">
+        <service id="rmzamora_calendar.form_factory.attendee.default" class="Rmzamora\CalendarBundle\Form\Factory\AttendeeFormFactory" public="false">
             <argument type="service" id="form.factory" />
-            <argument>%rizza_calendar.form.attendee.type%</argument>
-            <argument>%rizza_calendar.form.attendee.name%</argument>
+            <argument>%rmzamora_calendar.form.attendee.type%</argument>
+            <argument>%rmzamora_calendar.form.attendee.name%</argument>
         </service>
     </services>
 

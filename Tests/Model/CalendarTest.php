@@ -1,16 +1,16 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\Model;
+namespace Rmzamora\CalendarBundle\Tests\Model;
 
-use Rizza\CalendarBundle\Model\CalendarInterface;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 
 class CalendarTest extends CalendarTestCase
 {
     /**
      * The class to test
      *
-     * @var Rizza\CalendarBundle\Model\Calendar
+     * @var Rmzamora\CalendarBundle\Model\Calendar
      */
     private $calendar;
 
@@ -18,7 +18,7 @@ class CalendarTest extends CalendarTestCase
     {
         parent::setUp();
 
-        $this->calendar = $this->getMockForAbstractClass("Rizza\CalendarBundle\Model\Calendar");
+        $this->calendar = $this->getMockForAbstractClass("Rmzamora\CalendarBundle\Model\Calendar");
     }
 
     public function tearDown()

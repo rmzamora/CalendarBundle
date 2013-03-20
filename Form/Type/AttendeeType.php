@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Form\Type;
+namespace Rmzamora\CalendarBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilder;
-use Rizza\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
 
 class AttendeeType extends AbstractType
 {
@@ -23,7 +23,7 @@ class AttendeeType extends AbstractType
 
     public function getName()
     {
-        return 'rizza_calendar_attendee';
+        return 'rmzamora_calendar_attendee';
     }
 
 }

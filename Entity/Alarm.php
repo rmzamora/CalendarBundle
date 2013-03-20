@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Entity;
+namespace Rmzamora\CalendarBundle\Entity;
 
-use Rizza\CalendarBundle\Model\Alarm as AbstractAlarm;
+use Rmzamora\CalendarBundle\Model\Alarm as AbstractAlarm;
 
 class Alarm extends AbstractAlarm
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Creator;
+namespace Rmzamora\CalendarBundle\Creator;
 
-use Rizza\CalendarBundle\Model\AttendeeManagerInterface;
-use Rizza\CalendarBundle\Blamer\AttendeeBlamerInterface;
-use Rizza\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeManagerInterface;
+use Rmzamora\CalendarBundle\Blamer\AttendeeBlamerInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
 
 class AttendeeCreator implements AttendeeCreatorInterface
 {

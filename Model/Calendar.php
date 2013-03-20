@@ -1,9 +1,9 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Rizza\CalendarBundle\Model\EventInterface;
+use Rmzamora\CalendarBundle\Model\EventInterface;
 use Symfony\Component\Validator\Constraints as validation;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -53,7 +53,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::getId()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::getId()
      */
     public function getId()
     {
@@ -62,7 +62,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::setOwner()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::setOwner()
      */
     public function setOwner(UserInterface $owner)
     {
@@ -71,7 +71,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::getOwner()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::getOwner()
      */
     public function getOwner()
     {
@@ -80,7 +80,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::setName()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::setName()
      */
     public function setName($name)
     {
@@ -89,7 +89,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::getName()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::getName()
      */
     public function getName()
     {
@@ -98,7 +98,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::getEvents()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::getEvents()
      */
     public function getEvents()
     {
@@ -107,7 +107,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::getEventsOnDay()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::getEventsOnDay()
      */
     public function getEventsOnDay(\DateTime $dateTime)
     {
@@ -121,7 +121,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::addEvent()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::addEvent()
      */
     public function addEvent(EventInterface $event)
     {
@@ -132,7 +132,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::removeEvent()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::removeEvent()
      */
     public function removeEvent(EventInterface $event)
     {
@@ -153,7 +153,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::setVisibility()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::setVisibility()
      */
     public function setVisibility($visibility)
     {
@@ -162,7 +162,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::getVisibility()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::getVisibility()
      */
     public function getVisibility()
     {
@@ -171,7 +171,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::isPublic()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::isPublic()
      */
     public function isPublic()
     {
@@ -180,7 +180,7 @@ abstract class Calendar implements CalendarInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarInterface::isPrivate()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarInterface::isPrivate()
      */
     public function isPrivate()
     {

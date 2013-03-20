@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Form\Type;
+namespace Rmzamora\CalendarBundle\Form\Type;
 
-use Rizza\CalendarBundle\Form\DataTransformer\UsernameToUserTransformer;
+use Rmzamora\CalendarBundle\Form\DataTransformer\UsernameToUserTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilder;
 
@@ -28,7 +28,7 @@ class UsernameType extends AbstractType
 
     public function getName()
     {
-        return 'rizza_calendar_username';
+        return 'rmzamora_calendar_username';
     }
 
 }

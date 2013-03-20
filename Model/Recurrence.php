@@ -1,11 +1,11 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 use \Datetime;
 use Doctrine\Common\Collections\ArrayCollection;
-use Rizza\CalendarBundle\DateProcessor\DayOfTheMonth;
-use Rizza\CalendarBundle\DateProcessor\DayOfTheYear;
+use Rmzamora\CalendarBundle\DateProcessor\DayOfTheMonth;
+use Rmzamora\CalendarBundle\DateProcessor\DayOfTheYear;
 
 abstract class Recurrence implements RecurrenceInterface
 {
@@ -201,7 +201,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getId()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getId()
      */
     public function getId()
     {
@@ -210,7 +210,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::setEvent()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::setEvent()
      */
     public function setEvent(EventInterface $event)
     {
@@ -219,7 +219,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getEvent()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getEvent()
      */
     public function getEvent()
     {
@@ -228,7 +228,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getDays()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getDays()
      */
     public function getDays()
     {
@@ -237,7 +237,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::addDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::addDay()
      */
     public function addDay($day)
     {
@@ -249,7 +249,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::removeDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::removeDay()
      */
     public function removeDay($day)
     {
@@ -261,7 +261,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getDayFrequency()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getDayFrequency()
      */
     public function getDayFrequency()
     {
@@ -270,7 +270,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::addDayFrequency()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::addDayFrequency()
      */
     public function addDayFrequency($frequency)
     {
@@ -286,7 +286,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::removeDayFrequency()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::removeDayFrequency()
      */
     public function removeDayFrequency($frequency)
     {
@@ -297,7 +297,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getMonths()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getMonths()
      */
     public function getMonths()
     {
@@ -306,7 +306,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::addMonth()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::addMonth()
      */
     public function addMonth($month)
     {
@@ -318,7 +318,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::removeMonth()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::removeMonth()
      */
     public function removeMonth($month)
     {
@@ -330,7 +330,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getMonthDays()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getMonthDays()
      */
     public function getMonthDays()
     {
@@ -339,7 +339,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::addMonthDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::addMonthDay()
      */
     public function addMonthDay($day)
     {
@@ -356,7 +356,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::removeMonthDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::removeMonthDay()
      */
     public function removeMonthDay($day)
     {
@@ -368,7 +368,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getWeekNumbers()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getWeekNumbers()
      */
     public function getWeekNumbers()
     {
@@ -377,7 +377,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::addWeekNumber()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::addWeekNumber()
      */
     public function addWeekNumber($week)
     {
@@ -389,7 +389,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::removeWeekNumber()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::removeWeekNumber()
      */
     public function removeWeekNumber($week)
     {
@@ -401,7 +401,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getYearDays()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getYearDays()
      */
     public function getYearDays()
     {
@@ -410,7 +410,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::addYearDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::addYearDay()
      */
     public function addYearDay($day)
     {
@@ -422,7 +422,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::removeYearDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::removeYearDay()
      */
     public function removeYearDay($day)
     {
@@ -434,7 +434,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::setFrequency()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::setFrequency()
      */
     public function setFrequency($frequency)
     {
@@ -454,7 +454,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getFrequency()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getFrequency()
      */
     public function getFrequency()
     {
@@ -463,7 +463,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::setInterval()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::setInterval()
      */
     public function setInterval($interval)
     {
@@ -472,7 +472,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getInterval()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getInterval()
      */
     public function getInterval()
     {
@@ -481,7 +481,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::setUntil()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::setUntil()
      */
     public function setUntil(DateTime $until)
     {
@@ -490,7 +490,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getUntil()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getUntil()
      */
     public function getUntil()
     {
@@ -499,7 +499,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::setWeekStartDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::setWeekStartDay()
      */
     public function setWeekStartDay($day)
     {
@@ -522,7 +522,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getWeekStartDay()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getWeekStartDay()
      */
     public function getWeekStartDay()
     {
@@ -531,7 +531,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::contains()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::contains()
      */
     public function contains(DateTime $dateTime)
     {
@@ -648,7 +648,7 @@ abstract class Recurrence implements RecurrenceInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\RecurrenceInterface::getOccurrences()
+     * @see \Rmzamora\CalendarBundle\Model\RecurrenceInterface::getOccurrences()
      */
     public function getOccurrences(DateTime $betweenStart = null, DateTime $betweenEnd = null)
     {

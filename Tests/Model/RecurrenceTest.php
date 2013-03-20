@@ -1,17 +1,17 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\Model;
+namespace Rmzamora\CalendarBundle\Tests\Model;
 
 use \DateTime;
-use Rizza\CalendarBundle\Model\Recurrence;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Model\Recurrence;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 
 class RecurrenceTest extends CalendarTestCase
 {
     /**
      * The class to test
      *
-     * @var Rizza\CalendarBundle\Model\Recurrence
+     * @var Rmzamora\CalendarBundle\Model\Recurrence
      */
     private $recurrence;
 
@@ -19,7 +19,7 @@ class RecurrenceTest extends CalendarTestCase
     {
         parent::setUp();
 
-        $this->recurrence = $this->getMockForAbstractClass("Rizza\CalendarBundle\Model\Recurrence");
+        $this->recurrence = $this->getMockForAbstractClass("Rmzamora\CalendarBundle\Model\Recurrence");
     }
 
     public function tearDown()

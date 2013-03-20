@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\DateProcessor;
+namespace Rmzamora\CalendarBundle\DateProcessor;
 
 interface Processor
 {

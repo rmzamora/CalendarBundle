@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Blamer;
+namespace Rmzamora\CalendarBundle\Blamer;
 
-use Rizza\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
 use Symfony\Component\Security\Core\SecurityContextInterface;
 
 class SecurityAttendeeBlamer implements AttendeeBlamerInterface

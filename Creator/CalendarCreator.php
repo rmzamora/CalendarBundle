@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Creator;
+namespace Rmzamora\CalendarBundle\Creator;
 
-use Rizza\CalendarBundle\Model\CalendarManagerInterface;
-use Rizza\CalendarBundle\Blamer\CalendarBlamerInterface;
-use Rizza\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\CalendarManagerInterface;
+use Rmzamora\CalendarBundle\Blamer\CalendarBlamerInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
 
 class CalendarCreator implements CalendarCreatorInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\DateProcessor;
+namespace Rmzamora\CalendarBundle\DateProcessor;
 
 class DayOfTheWeek implements Processor
 {
@@ -46,7 +46,7 @@ class DayOfTheWeek implements Processor
         } else if ($day > 7 || $day < 1) {
             throw new \RangeException('Invalid day numeric provided');
         }
-        
+
         $this->day = (int) $day;
     }
 

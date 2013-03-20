@@ -1,15 +1,15 @@
 <?php
 
-namespace Rizza\CalendarBundle\Controller;
+namespace Rmzamora\CalendarBundle\Controller;
 
 use Symfony\Component\DependencyInjection\ContainerAware;
-use Rizza\CalendarBundle\Model\CalendarManagerInterface;
-use Rizza\CalendarBundle\Model\EventManagerInterface;
-use Rizza\CalendarBundle\Form\Factory\CalendarFormFactoryInterface;
-use Rizza\CalendarBundle\Form\Factory\EventFormFactoryInterface;
+use Rmzamora\CalendarBundle\Model\CalendarManagerInterface;
+use Rmzamora\CalendarBundle\Model\EventManagerInterface;
+use Rmzamora\CalendarBundle\Form\Factory\CalendarFormFactoryInterface;
+use Rmzamora\CalendarBundle\Form\Factory\EventFormFactoryInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Rizza\CalendarBundle\Model\AttendeeManagerInterface;
-use Rizza\CalendarBundle\Form\Factory\AttendeeFormFactoryInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeManagerInterface;
+use Rmzamora\CalendarBundle\Form\Factory\AttendeeFormFactoryInterface;
 
 abstract class BaseController extends ContainerAware
 {
@@ -19,7 +19,7 @@ abstract class BaseController extends ContainerAware
      */
     protected function getCalendarManager()
     {
-        return $this->container->get('rizza_calendar.manager.calendar');
+        return $this->container->get('rmzamora_calendar.manager.calendar');
     }
 
     /**
@@ -27,7 +27,7 @@ abstract class BaseController extends ContainerAware
      */
     protected function getEventManager()
     {
-        return $this->container->get('rizza_calendar.manager.event');
+        return $this->container->get('rmzamora_calendar.manager.event');
     }
 
     /**
@@ -35,7 +35,7 @@ abstract class BaseController extends ContainerAware
      */
     protected function getAttendeeManager()
     {
-        return $this->container->get('rizza_calendar.manager.attendee');
+        return $this->container->get('rmzamora_calendar.manager.attendee');
     }
 
     /**
@@ -43,7 +43,7 @@ abstract class BaseController extends ContainerAware
      */
     protected function getCalendarFormFactory()
     {
-        return $this->container->get('rizza_calendar.form_factory.calendar');
+        return $this->container->get('rmzamora_calendar.form_factory.calendar');
     }
 
     /**
@@ -51,7 +51,7 @@ abstract class BaseController extends ContainerAware
      */
     protected function getEventFormFactory()
     {
-        return $this->container->get('rizza_calendar.form_factory.event');
+        return $this->container->get('rmzamora_calendar.form_factory.event');
     }
 
     /**
@@ -59,12 +59,12 @@ abstract class BaseController extends ContainerAware
      */
     protected function getAttendeeFormFactory()
     {
-        return $this->container->get('rizza_calendar.form_factory.attendee');
+        return $this->container->get('rmzamora_calendar.form_factory.attendee');
     }
 
     protected function createRedirect($controller, $action, $data = array())
     {
-        return new RedirectResponse($this->container->get('router')->generate($this->container->getParameter(sprintf('rizza_calendar.routing.%s.%s', $controller, $action)), $data));
+        return new RedirectResponse($this->container->get('router')->generate($this->container->getParameter(sprintf('rmzamora_calendar.routing.%s.%s', $controller, $action)), $data));
     }
 
 }

@@ -4,7 +4,7 @@
                         xsi:schemaLocation="http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping
                         http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping.xsd">
 
-    <mapped-superclass name="Rizza\CalendarBundle\Document\Event" table="calendar_event">
+    <mapped-superclass name="Rmzamora\CalendarBundle\Document\Event" table="calendar_event">
         <field name="title" fieldName="title" type="string" />
         <field name="category" fieldName="category" type="string" />
         <field name="description" fieldName="description" type="string" />

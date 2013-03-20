@@ -1,13 +1,13 @@
 <?php
 
-namespace Rizza\CalendarBundle\Entity;
+namespace Rmzamora\CalendarBundle\Entity;
 
-use Rizza\CalendarBundle\Model\CalendarManager as BaseCalendarManager;
+use Rmzamora\CalendarBundle\Model\CalendarManager as BaseCalendarManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
-use Rizza\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Rizza\CalendarBundle\Blamer\CalendarBlamerInterface;
+use Rmzamora\CalendarBundle\Blamer\CalendarBlamerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class CalendarManager extends BaseCalendarManager

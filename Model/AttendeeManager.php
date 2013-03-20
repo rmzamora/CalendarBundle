@@ -1,12 +1,12 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 abstract class AttendeeManager implements AttendeeManagerInterface
 {
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeManagerInterface::createAttendee()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeManagerInterface::createAttendee()
      */
     public function createAttendee(EventInterface $event)
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\DateProcessor;
+namespace Rmzamora\CalendarBundle\Tests\DateProcessor;
 
 use \DateTime;
-use Rizza\CalendarBundle\DateProcessor\DayOfTheYear;
+use Rmzamora\CalendarBundle\DateProcessor\DayOfTheYear;
 
 class DayOfTheYearTest extends \PHPUnit_Framework_TestCase
 {

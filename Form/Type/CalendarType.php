@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Form\Type;
+namespace Rmzamora\CalendarBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilder;
-use Rizza\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
 
 class CalendarType extends AbstractType
 {
