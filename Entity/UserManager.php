@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Entity;
+namespace Rmzamora\CalendarBundle\Entity;
 
-use Rizza\CalendarBundle\Model\UserManager as BaseUserManager;
+use Rmzamora\CalendarBundle\Model\UserManager as BaseUserManager;
 use Doctrine\ORM\EntityManager;
 
 class UserManager extends BaseUserManager

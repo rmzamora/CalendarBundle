@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\Controller;
+namespace Rmzamora\CalendarBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
@@ -12,7 +12,7 @@ class EventController extends BaseController
         $user = $this->container->get('security.context')->getToken()->getUser();
         $events = $this->getEventManager()->findVisible($user);
 
-        return $this->container->get('templating')->renderResponse('RizzaCalendarBundle:Event:list.html.twig', array(
+        return $this->container->get('templating')->renderResponse('RmzamoraCalendarBundle:Event:list.html.twig', array(
             'events' => $events,
         ));
     }
@@ -25,7 +25,7 @@ class EventController extends BaseController
             throw new AccessDeniedException();
         }
 
-        return $this->container->get('templating')->renderResponse('RizzaCalendarBundle:Event:show.html.twig', array(
+        return $this->container->get('templating')->renderResponse('RmzamoraCalendarBundle:Event:show.html.twig', array(
             'event' => $event,
         ));
     }
@@ -45,7 +45,7 @@ class EventController extends BaseController
         if ('POST' === $request->getMethod()) {
             $form->bindRequest($request);
 
-            if ($form->isValid() && $this->container->get('rizza_calendar.creator.event')->create($event)) {
+            if ($form->isValid() && $this->container->get('rmzamora_calendar.creator.event')->create($event)) {
                 // @todo add flash
                 return $this->createRedirect('event', 'show', array(
                     'id' => $event->getId(),
@@ -53,7 +53,7 @@ class EventController extends BaseController
             }
         }
 
-        return $this->container->get('templating')->renderResponse('RizzaCalendarBundle:Event:add.html.twig', array(
+        return $this->container->get('templating')->renderResponse('RmzamoraCalendarBundle:Event:add.html.twig', array(
             'form' => $form->createView(),
             'calendar' => $calendar,
         ));
@@ -81,7 +81,7 @@ class EventController extends BaseController
             }
         }
 
-        return $this->container->get('templating')->renderResponse('RizzaCalendarBundle:Event:edit.html.twig', array(
+        return $this->container->get('templating')->renderResponse('RmzamoraCalendarBundle:Event:edit.html.twig', array(
             'form' => $form->createView(),
             'event' => $event,
         ));
@@ -105,7 +105,7 @@ class EventController extends BaseController
             ));
         }
 
-        return $this->container->get('templating')->renderResponse('RizzaCalendarBundle:Event:delete.html.twig', array(
+        return $this->container->get('templating')->renderResponse('RmzamoraCalendarBundle:Event:delete.html.twig', array(
             'event' => $event,
         ));
 

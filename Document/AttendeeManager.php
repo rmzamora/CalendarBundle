@@ -1,9 +1,9 @@
 <?php
 
-namespace Rizza\CalendarBundle\Document;
+namespace Rmzamora\CalendarBundle\Document;
 
-use Rizza\CalendarBundle\Model\AttendeeManager as BaseAttendeeManager;
-use Rizza\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeManager as BaseAttendeeManager;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Doctrine\ODM\MongoDB\DocumentRepository;

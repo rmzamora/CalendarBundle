@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\DateProcessor;
+namespace Rmzamora\CalendarBundle\Tests\DateProcessor;
 
-use Rizza\CalendarBundle\DateProcessor\DayOfTheWeek;
+use Rmzamora\CalendarBundle\DateProcessor\DayOfTheWeek;
 
 class DayOfTheWeekTest extends \PHPUnit_Framework_TestCase
 {

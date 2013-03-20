@@ -4,18 +4,18 @@
  * @package CalendarBundle
  */
 
-namespace Rizza\CalendarBundle\Tests;
+namespace Rmzamora\CalendarBundle\Tests;
 
-use Rizza\CalendarBundle\Blamer\AttendeeBlamerInterface;
-use Rizza\CalendarBundle\Blamer\CalendarBlamerInterface;
-use Rizza\CalendarBundle\Blamer\EventBlamerInterface;
-use Rizza\CalendarBundle\Model\AttendeeInterface;
-use Rizza\CalendarBundle\Model\AttendeeManagerInterface;
-use Rizza\CalendarBundle\Model\CalendarInterface;
-use Rizza\CalendarBundle\Model\CalendarManagerInterface;
-use Rizza\CalendarBundle\Model\EventInterface;
-use Rizza\CalendarBundle\Model\EventManagerInterface;
-use Rizza\CalendarBundle\Model\Organizer;
+use Rmzamora\CalendarBundle\Blamer\AttendeeBlamerInterface;
+use Rmzamora\CalendarBundle\Blamer\CalendarBlamerInterface;
+use Rmzamora\CalendarBundle\Blamer\EventBlamerInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeManagerInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\CalendarManagerInterface;
+use Rmzamora\CalendarBundle\Model\EventInterface;
+use Rmzamora\CalendarBundle\Model\EventManagerInterface;
+use Rmzamora\CalendarBundle\Model\Organizer;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -37,7 +37,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
             $event = $this->getEvent();
         }
 
-        return $this->getMockForAbstractClass('Rizza\CalendarBundle\Model\Alarm', array($event));
+        return $this->getMockForAbstractClass('Rmzamora\CalendarBundle\Model\Alarm', array($event));
     }
 
     /**
@@ -50,7 +50,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockAttendee(AttendeeInterface $attendee = null)
     {
         if (null === $attendee) {
-            $attendee = $this->getMock("Rizza\CalendarBundle\Model\AttendeeInterface");
+            $attendee = $this->getMock("Rmzamora\CalendarBundle\Model\AttendeeInterface");
         }
 
         return $attendee;
@@ -98,7 +98,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockAttendeeBlamer(AttendeeBlamerInterface $attendeeBlamer = null)
     {
         if (null === $attendeeBlamer) {
-            $attendeeBlamer = $this->getMock("Rizza\CalendarBundle\Blamer\AttendeeBlamerInterface");
+            $attendeeBlamer = $this->getMock("Rmzamora\CalendarBundle\Blamer\AttendeeBlamerInterface");
         }
 
         return $attendeeBlamer;
@@ -130,7 +130,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockAttendeeManager(AttendeeManagerInterface $attendeeManager = null)
     {
         if (null === $attendeeManager) {
-            $attendeeManager = $this->getMock("Rizza\CalendarBundle\Model\AttendeeManagerInterface");
+            $attendeeManager = $this->getMock("Rmzamora\CalendarBundle\Model\AttendeeManagerInterface");
         }
 
         return $attendeeManager;
@@ -180,7 +180,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockCalendar(CalendarInterface $calendar = null)
     {
         if (null === $calendar) {
-            $calendar = $this->getMock('Rizza\CalendarBundle\Model\CalendarInterface');
+            $calendar = $this->getMock('Rmzamora\CalendarBundle\Model\CalendarInterface');
         }
 
         return $calendar;
@@ -228,7 +228,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockCalendarBlamer(CalendarBlamerInterface $calendarBlamer = null)
     {
         if (null === $calendarBlamer) {
-            $calendarBlamer = $this->getMock("Rizza\CalendarBundle\Blamer\CalendarBlamerInterface");
+            $calendarBlamer = $this->getMock("Rmzamora\CalendarBundle\Blamer\CalendarBlamerInterface");
         }
 
         return $calendarBlamer;
@@ -240,7 +240,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
      * @param CalendarInterface       $calendar       The calendar
      * @param CalendarBlamerInterface $calendarBlamer The calendar blamer
      *
-     * @return Ambigous <\Rizza\CalendarBundle\Tests\PHPUnit_Framework_MockObject_MockObject, CalendarBlamerInterface>
+     * @return Ambigous <\Rmzamora\CalendarBundle\Tests\PHPUnit_Framework_MockObject_MockObject, CalendarBlamerInterface>
      */
     protected function getMockCalendarBlamer_ExpectsBlame(CalendarInterface $calendar, CalendarBlamerInterface $calendarBlamer = null)
     {
@@ -260,7 +260,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockCalendarManager(CalendarManagerInterface $calendarManager = null)
     {
         if (null === $calendarManager) {
-            $calendarManager = $this->getMock("Rizza\CalendarBundle\Model\CalendarManagerInterface");
+            $calendarManager = $this->getMock("Rmzamora\CalendarBundle\Model\CalendarManagerInterface");
         }
 
         return $calendarManager;
@@ -300,7 +300,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockEvent(EventInterface $event = null)
     {
         if (null === $event) {
-            $event = $this->getMock('Rizza\CalendarBundle\Model\EventInterface');
+            $event = $this->getMock('Rmzamora\CalendarBundle\Model\EventInterface');
         }
 
         return $event;
@@ -364,7 +364,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockEventBlamer(EventBlamerInterface $eventBlamer = null)
     {
         if (null === $eventBlamer) {
-            $eventBlamer = $this->getMock("Rizza\CalendarBundle\Blamer\EventBlamerInterface");
+            $eventBlamer = $this->getMock("Rmzamora\CalendarBundle\Blamer\EventBlamerInterface");
         }
 
         return $eventBlamer;
@@ -396,7 +396,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockEventManager(EventManagerInterface $eventManager = null)
     {
         if (null === $eventManager) {
-            $eventManager = $this->getMock("Rizza\CalendarBundle\Model\EventManagerInterface");
+            $eventManager = $this->getMock("Rmzamora\CalendarBundle\Model\EventManagerInterface");
         }
 
         return $eventManager;
@@ -428,7 +428,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
     protected function getMockOrganizer(Organizer $organizer = null)
     {
         if (null === $organizer) {
-            $organizer = $this->getMock("Rizza\CalendarBundle\Model\Organizer");
+            $organizer = $this->getMock("Rmzamora\CalendarBundle\Model\Organizer");
         }
 
         return $organizer;
@@ -458,7 +458,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
      */
     protected function getMockRecipient()
     {
-        return $this->getMock('Rizza\CalendarBundle\Model\Recipient');
+        return $this->getMock('Rmzamora\CalendarBundle\Model\Recipient');
     }
 
     /**
@@ -468,7 +468,7 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase
      */
     protected function getMockRecurrence()
     {
-        return $this->getMock('Rizza\CalendarBundle\Model\RecurrenceInterface');
+        return $this->getMock('Rmzamora\CalendarBundle\Model\RecurrenceInterface');
     }
 
     /**

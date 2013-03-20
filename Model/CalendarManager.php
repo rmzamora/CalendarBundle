@@ -1,12 +1,12 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 abstract class CalendarManager implements CalendarManagerInterface
 {
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\CalendarManagerInterface::createCalendar()
+     * @see \Rmzamora\CalendarBundle\Model\CalendarManagerInterface::createCalendar()
      */
     public function createCalendar()
     {

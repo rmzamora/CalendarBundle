@@ -4,11 +4,11 @@
  * @package CalendarBundle
  */
 
-namespace Rizza\CalendarBundle\Tests\Model;
+namespace Rmzamora\CalendarBundle\Tests\Model;
 
 use \DateTime;
-use Rizza\CalendarBundle\Model\Attendee;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Model\Attendee;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 
 class AttendeeTest extends CalendarTestCase
 {

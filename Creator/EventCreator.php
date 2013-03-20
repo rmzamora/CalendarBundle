@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Creator;
+namespace Rmzamora\CalendarBundle\Creator;
 
-use Rizza\CalendarBundle\Model\EventInterface;
-use Rizza\CalendarBundle\Model\EventManagerInterface;
-use Rizza\CalendarBundle\Blamer\EventBlamerInterface;
+use Rmzamora\CalendarBundle\Model\EventInterface;
+use Rmzamora\CalendarBundle\Model\EventManagerInterface;
+use Rmzamora\CalendarBundle\Blamer\EventBlamerInterface;
 
 class EventCreator implements EventCreatorInterface
 {

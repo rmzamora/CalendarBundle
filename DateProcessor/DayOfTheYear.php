@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\DateProcessor;
+namespace Rmzamora\CalendarBundle\DateProcessor;
 
 use \DateInterval;
 use \DateTime;
@@ -68,7 +68,7 @@ class DayOfTheYear implements Processor
      *
      * @throws InvalidArgumentException
      *
-     * @return \Rizza\CalendarBundle\DateProcessor\DayOfTheYear
+     * @return \Rmzamora\CalendarBundle\DateProcessor\DayOfTheYear
      */
     public function setDay($day)
     {

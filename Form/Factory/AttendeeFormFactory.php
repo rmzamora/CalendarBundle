@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\Form\Factory;
+namespace Rmzamora\CalendarBundle\Form\Factory;
 
 use Symfony\Component\Form\FormFactoryInterface;
 

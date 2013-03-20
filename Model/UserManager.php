@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 abstract class UserManager implements UserManagerInterface
 {

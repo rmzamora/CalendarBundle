@@ -23,17 +23,17 @@ Proceed with a normal bundle installation, and then execute the following steps:
 Add to your config.yml:
 
     # app/config/config.yml
-    rizza_calendar: ~
+    rmzamora_calendar: ~
 
 Add to your routing.yml:
 
     # app/config/routing.yml
-    rizza_calendar_calendar:
-      resource: "@RizzaCalendarBundle/Resources/config/routing/calendar.yml"
+    rmzamora_calendar_calendar:
+      resource: "@RmzamoraCalendarBundle/Resources/config/routing/calendar.yml"
       prefix: /calendar
-      
-    rizza_calendar_event:
-      resource: "@RizzaCalendarBundle/Resources/config/routing/event.yml"
+
+    rmzamora_calendar_event:
+      resource: "@RmzamoraCalendarBundle/Resources/config/routing/event.yml"
       prefix: /event
 
 TODO

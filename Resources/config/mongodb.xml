@@ -5,30 +5,30 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="rizza_calendar.calendar_manager.class">Rizza\CalendarBundle\Document\CalendarManager</parameter>
-        <parameter key="rizza_calendar.event_manager.class">Rizza\CalendarBundle\Document\EventManager</parameter>
-        <parameter key="rizza_calendar.calendar_document.class">Rizza\CalendarBundle\Document\Calendar</parameter>
-        <parameter key="rizza_calendar.event_document.class">Rizza\CalendarBundle\Document\Event</parameter>
-        <parameter key="rizza_calendar.manager.user.class">Rizza\CalendarBundle\Document\UserManager</parameter>
-        <parameter key="rizza_calendar.manager.attendee.class">Rizza\CalendarBundle\Document\AttendeeManager</parameter>
+        <parameter key="rmzamora_calendar.calendar_manager.class">Rmzamora\CalendarBundle\Document\CalendarManager</parameter>
+        <parameter key="rmzamora_calendar.event_manager.class">Rmzamora\CalendarBundle\Document\EventManager</parameter>
+        <parameter key="rmzamora_calendar.calendar_document.class">Rmzamora\CalendarBundle\Document\Calendar</parameter>
+        <parameter key="rmzamora_calendar.event_document.class">Rmzamora\CalendarBundle\Document\Event</parameter>
+        <parameter key="rmzamora_calendar.manager.user.class">Rmzamora\CalendarBundle\Document\UserManager</parameter>
+        <parameter key="rmzamora_calendar.manager.attendee.class">Rmzamora\CalendarBundle\Document\AttendeeManager</parameter>
     </parameters>
 
     <services>
-        <service id="rizza_calendar.manager.calendar.default" class="%rizza_calendar.calendar_manager.class%" public="false">
+        <service id="rmzamora_calendar.manager.calendar.default" class="%rmzamora_calendar.calendar_manager.class%" public="false">
             <argument type="service" id="doctrine.odm.mongodb.default_document_manager" />
-            <argument>%rizza_calendar.calendar_document.class%</argument>
+            <argument>%rmzamora_calendar.calendar_document.class%</argument>
         </service>
-        <service id="rizza_calendar.manager.event.default" class="%rizza_calendar.event_manager.class%" public="false">
+        <service id="rmzamora_calendar.manager.event.default" class="%rmzamora_calendar.event_manager.class%" public="false">
             <argument type="service" id="doctrine.odm.mongodb.default_document_manager" />
-            <argument>%rizza_calendar.event_document.class%</argument>
+            <argument>%rmzamora_calendar.event_document.class%</argument>
         </service>
-        <service id="rizza_calendar.manager.user.default" class="%rizza_calendar.manager.user.class%" public="false">
+        <service id="rmzamora_calendar.manager.user.default" class="%rmzamora_calendar.manager.user.class%" public="false">
             <argument type="service" id="doctrine.odm.mongodb.default_document_manager" />
-            <argument>%rizza_calendar.model.user.class%</argument>
+            <argument>%rmzamora_calendar.model.user.class%</argument>
         </service>
-        <service id="rizza_calendar.manager.attendee.default" class="%rizza_calendar.manager.attendee.class%" public="false">
+        <service id="rmzamora_calendar.manager.attendee.default" class="%rmzamora_calendar.manager.attendee.class%" public="false">
             <argument type="service" id="doctrine.odm.mongodb.default_document_manager" />
-            <argument>%rizza_calendar.model.attendee.class%</argument>
+            <argument>%rmzamora_calendar.model.attendee.class%</argument>
         </service>
     </services>
 

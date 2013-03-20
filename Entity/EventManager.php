@@ -1,14 +1,14 @@
 <?php
 
-namespace Rizza\CalendarBundle\Entity;
+namespace Rmzamora\CalendarBundle\Entity;
 
-use Rizza\CalendarBundle\Model\EventManager as BaseEventManager;
+use Rmzamora\CalendarBundle\Model\EventManager as BaseEventManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Rizza\CalendarBundle\Model\EventInterface;
-use Rizza\CalendarBundle\Blamer\EventBlamerInterface;
-use Rizza\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\EventInterface;
+use Rmzamora\CalendarBundle\Blamer\EventBlamerInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class EventManager extends BaseEventManager
@@ -57,7 +57,7 @@ class EventManager extends BaseEventManager
 
         return true;
     }
-    
+
     public function find($id)
     {
         $event = $this->repo->find($id);

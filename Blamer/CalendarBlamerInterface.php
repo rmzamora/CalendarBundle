@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Blamer;
+namespace Rmzamora\CalendarBundle\Blamer;
 
-use Rizza\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
 
 interface CalendarBlamerInterface
 {

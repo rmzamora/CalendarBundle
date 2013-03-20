@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\Security\Authorization\Voter;
+namespace Rmzamora\CalendarBundle\Tests\Security\Authorization\Voter;
 
-use Rizza\CalendarBundle\Model\AttendeeManagerInterface;
-use Rizza\CalendarBundle\Security\Authorization\Voter\AttendeeVoter;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Model\AttendeeManagerInterface;
+use Rmzamora\CalendarBundle\Security\Authorization\Voter\AttendeeVoter;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
 
 /**
@@ -75,7 +75,7 @@ class AttendeeVoterTest extends CalendarTestCase
         $attributes      = array();
 
         if ($suportsClass) {
-            $class = "Rizza\CalendarBundle\Model\AttendeeInterface";
+            $class = "Rmzamora\CalendarBundle\Model\AttendeeInterface";
 
             if (!$isValidToken) {
                 $token = $this->getMockToken_ExpectsGetUser(null, $token);
@@ -155,7 +155,7 @@ class AttendeeVoterTest extends CalendarTestCase
      * @param AttendeeManagerInterface $attendeeManager The attendeeManager
      * @param string                   $class           The class to support
      *
-     * @return \Rizza\CalendarBundle\Security\Authorization\Voter\AttendeeVoter
+     * @return \Rmzamora\CalendarBundle\Security\Authorization\Voter\AttendeeVoter
      */
     protected function getVoter(AttendeeManagerInterface $attendeeManager, $class)
     {

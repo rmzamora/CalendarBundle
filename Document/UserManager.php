@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Document;
+namespace Rmzamora\CalendarBundle\Document;
 
-use Rizza\CalendarBundle\Model\UserManager as BaseUserManager;
+use Rmzamora\CalendarBundle\Model\UserManager as BaseUserManager;
 use Doctrine\ODM\MongoDB\DocumentManager;
 
 class UserManager extends BaseUserManager

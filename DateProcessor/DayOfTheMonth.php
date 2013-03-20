@@ -1,11 +1,11 @@
 <?php
 
-namespace Rizza\CalendarBundle\DateProcessor;
+namespace Rmzamora\CalendarBundle\DateProcessor;
 
 class DayOfTheMonth implements Processor
 {
     protected $day;
-    
+
     public function __construct($day = 0)
     {
         $this->setDay($day);

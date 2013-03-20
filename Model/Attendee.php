@@ -1,6 +1,6 @@
 <?php
 
-namespace Rizza\CalendarBundle\Model;
+namespace Rmzamora\CalendarBundle\Model;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -50,7 +50,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::getId()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::getId()
      */
     public function getId()
     {
@@ -59,7 +59,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::setCreatedAt()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::setCreatedAt()
      */
     public function setCreatedAt(\DateTime $createdAt)
     {
@@ -68,7 +68,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::getCreatedAt()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::getCreatedAt()
      */
     public function getCreatedAt()
     {
@@ -77,7 +77,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::setUpdatedAt()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::setUpdatedAt()
      */
     public function setUpdatedAt(\DateTime $updatedAt)
     {
@@ -86,7 +86,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::getUpdatedAt()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::getUpdatedAt()
      */
     public function getUpdatedAt()
     {
@@ -95,7 +95,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::setUser()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::setUser()
      */
     public function setUser(UserInterface $user)
     {
@@ -104,7 +104,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::getUser()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::getUser()
      */
     public function getUser()
     {
@@ -113,7 +113,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::setEvent()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::setEvent()
      */
     public function setEvent(EventInterface $event)
     {
@@ -122,7 +122,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::getEvent()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::getEvent()
      */
     public function getEvent()
     {
@@ -131,7 +131,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::setStatus()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::setStatus()
      */
     public function setStatus($status)
     {
@@ -140,7 +140,7 @@ class Attendee implements AttendeeInterface
 
     /**
      * (non-PHPdoc)
-     * @see \Rizza\CalendarBundle\Model\AttendeeInterface::getStatus()
+     * @see \Rmzamora\CalendarBundle\Model\AttendeeInterface::getStatus()
      */
     public function getStatus()
     {

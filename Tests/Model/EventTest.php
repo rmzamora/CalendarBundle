@@ -1,10 +1,10 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\Model;
+namespace Rmzamora\CalendarBundle\Tests\Model;
 
 use \DateTime;
-use Rizza\CalendarBundle\Model\Event;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Model\Event;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 
 class EventTest extends CalendarTestCase
 {
@@ -19,7 +19,7 @@ class EventTest extends CalendarTestCase
     {
         parent::setUp();
 
-        $this->event = $this->getMockForAbstractClass('Rizza\CalendarBundle\Model\Event');
+        $this->event = $this->getMockForAbstractClass('Rmzamora\CalendarBundle\Model\Event');
     }
 
     public function tearDown()

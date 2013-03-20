@@ -11,14 +11,14 @@
     stopOnFailure               = "false"
     syntaxCheck                 = "false"
     bootstrap                   = "./Tests/bootstrap.php" >
-   
+
 <!--    Enable the coverage -->
 <!--     <logging> -->
 <!--         <log type="coverage-html" target="coverage" charset="UTF-8"/> -->
 <!--     </logging> -->
 
     <testsuites>
-        <testsuite name="Rizza's CalendarBundle">
+        <testsuite name="Rmzamora's CalendarBundle">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>

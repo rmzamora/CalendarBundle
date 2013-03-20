@@ -1,11 +1,11 @@
 <?php
 
-namespace Rizza\CalendarBundle\Entity;
+namespace Rmzamora\CalendarBundle\Entity;
 
-use Rizza\CalendarBundle\Model\AttendeeManager as BaseAttendeeManager;
+use Rmzamora\CalendarBundle\Model\AttendeeManager as BaseAttendeeManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
-use Rizza\CalendarBundle\Model\AttendeeInterface;
+use Rmzamora\CalendarBundle\Model\AttendeeInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class AttendeeManager extends BaseAttendeeManager

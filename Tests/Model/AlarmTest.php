@@ -1,9 +1,9 @@
 <?php
 
-namespace Rizza\CalendarBundle\Tests\Model;
+namespace Rmzamora\CalendarBundle\Tests\Model;
 
-use Rizza\CalendarBundle\Model\EventInterface;
-use Rizza\CalendarBundle\Tests\CalendarTestCase;
+use Rmzamora\CalendarBundle\Model\EventInterface;
+use Rmzamora\CalendarBundle\Tests\CalendarTestCase;
 
 class AlarmTest extends CalendarTestCase
 {
@@ -66,6 +66,6 @@ class AlarmTest extends CalendarTestCase
     {
         $event = $this->getMockEvent($event);
 
-        return $this->getMockForAbstractClass("Rizza\CalendarBundle\Model\Alarm", array($event));
+        return $this->getMockForAbstractClass("Rmzamora\CalendarBundle\Model\Alarm", array($event));
     }
 }

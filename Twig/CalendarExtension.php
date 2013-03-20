@@ -1,9 +1,9 @@
 <?php
 
-namespace Rizza\CalendarBundle\Twig;
+namespace Rmzamora\CalendarBundle\Twig;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Rizza\CalendarBundle\Model\CalendarInterface;
+use Rmzamora\CalendarBundle\Model\CalendarInterface;
 
 class CalendarExtension extends \Twig_Extension
 {
@@ -25,20 +25,20 @@ class CalendarExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            'rizza_calendar_route' => new \Twig_Function_Method($this, 'rizza_calendar_route'),
+            'rmzamora_calendar_route' => new \Twig_Function_Method($this, 'rmzamora_calendar_route'),
         );
     }
 
-    public function rizza_calendar_route($controller, $action)
+    public function rmzamora_calendar_route($controller, $action)
     {
-        return $this->container->getParameter(sprintf('rizza_calendar.routing.%s.%s', $controller, $action));
+        return $this->container->getParameter(sprintf('rmzamora_calendar.routing.%s.%s', $controller, $action));
     }
 
     public function calendarMonth(CalendarInterface $calendar, $month, $year)
     {
         $time = mktime(0, 0, 0, $month, 1, $year);
         $daysInMonth = date('t', $time);
-        $daysInPreviousMonth = $this->getDaysInPreviousMonth($month, $year); 
+        $daysInPreviousMonth = $this->getDaysInPreviousMonth($month, $year);
         $runningDay = date('w', $time);
         $daysInWeek = 1;
         $dayCounter = 0;
@@ -115,6 +115,6 @@ class CalendarExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'rizza_calendar';
+        return 'rmzamora_calendar';
     }
 }

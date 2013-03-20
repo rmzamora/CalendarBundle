@@ -1,8 +1,8 @@
 <?php
 
-namespace Rizza\CalendarBundle\Entity;
+namespace Rmzamora\CalendarBundle\Entity;
 
-use Rizza\CalendarBundle\Model\Attendee as AbstractAttendee;
+use Rmzamora\CalendarBundle\Model\Attendee as AbstractAttendee;
 
 abstract class Attendee extends AbstractAttendee
 {
