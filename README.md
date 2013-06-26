@@ -1,6 +1,8 @@
 CalendarBundle
 ==============
 
+forked from robzienert/CalendarBundle
+
 Provides applications with an events calendar. This bundle's model layer
 represents a heavy port of Apple's iCal application.
 
